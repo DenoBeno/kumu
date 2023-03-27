@@ -209,7 +209,7 @@
       "attributes": {
         "label": "Title",
         "level": "2",
-		"description": "Object name. Short, informative and, ideally also unique.",
+        "description": "Object name. Short, informative and, ideally also unique.",
         "meaning": "Element",
         "cardinality": "1"
       }
