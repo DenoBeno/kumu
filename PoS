@@ -1187,7 +1187,7 @@
     {
       "_id": "pers-rcFYdJFI",
       "name": "PoS data model",
-      "style": "@controls {\n  bottom {\n    filter {\n      target: element;\n      by: \"meaning\";\n      as: buttons;\n      multiple: true;\n      default: show-all;\n    }\n  }\n\n  top-right {\n    showcase {\n      target: element;\n      by: \"meaning\";\n      as: buttons;\n      multiple: true;\n      default: show-all;\n      mode: normal;\n    }\n  }\n}\n\n@settings {\n  template: systems;\n  element-color: categorize(\"Level\", neon2);\n  element-shape: categorize(\"Meaning\");\n  element-scale: scale(\"Level\", 1.25, 0.8);\n}\n\n/* elements:  */\n[\"Meaning\"=\"Concept\"] {\n  shape: triangle;\n}\n\n/* elements:  */\n[\"Meaning\"=\"Taxonomy\"] {\n  shape: rectangle;\n}\n\n"
+      "style": "@controls {\n  bottom {\n    filter {\n      target: element;\n      by: \"meaning\";\n      as: buttons;\n      multiple: true;\n      default: show-all;\n    }\n  }\n\n  top-right {\n    showcase {\n      target: element;\n      by: \"meaning\";\n      as: buttons;\n      multiple: true;\n      default: show-all;\n      mode: normal;\n    }\n  }\n}\n\n@settings {\n  template: systems;\n  element-color: categorize(\"Level\", neon2);\n  element-shape: categorize(\"Meaning\");\n  element-scale: scale(\"Level\", 1.25, 0.8);\n}\n\n/* elements:  */\n[\"Meaning\"=\"Concept\"] {\n  shape: rectangle;\n}\n\n/* elements:  */\n[\"Meaning\"=\"Taxonomy\"] {\n  shape: triangle;\n}\n\n"
     }
   ]
 }
