@@ -1,0 +1,1192 @@
+{
+  "version": 1,
+  "name": "PoS Data Model",
+  "description": "Data model representation for DRIVER+ Portfolio of Solutions",
+  "proxyImages": true,
+  "defaultMap": "map-2Ss175KC",
+  "defaultPerspective": null,
+  "attributeRelevance": {},
+  "attributes": [
+    {
+      "_id": "attr-odLXLKyQ",
+      "name": "Cardinality",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-pGwebwEn",
+      "name": "Connection Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Same",
+        "Opposite",
+        "+",
+        "-",
+        "++",
+        "+-",
+        "-+",
+        "--",
+        "m:n"
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-sbl18xKz",
+      "name": "Description",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-3zBMwiY1",
+      "name": "Element Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Main Concept",
+        "Secondary Concept",
+        "Element",
+        "Taxonomy",
+        null
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-EsRknrhF",
+      "name": "Label",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-9ZpToMHj",
+      "name": "Level",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-RfIMwkUy",
+      "name": "Loop Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Reinforcing",
+        "Balancing",
+        "Vicious",
+        "Virtuous",
+        "Stabilizing",
+        "Stagnating"
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-XGGBI7Q8",
+      "name": "Meaning",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-Varj2YYN",
+      "name": "Tags",
+      "format": "string",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    }
+  ],
+  "elements": [
+    {
+      "_id": "elem-14xOZ1hK",
+      "attributes": {
+        "label": "Standard",
+        "level": "2",
+        "cardinality": "0..*",
+        "meaning": "Concept"
+      }
+    },
+    {
+      "_id": "elem-3RrQvrMu",
+      "attributes": {
+        "label": "Soluton"
+      }
+    },
+    {
+      "_id": "elem-8NPAFlU3",
+      "attributes": {
+        "label": "Data Collection Plan",
+        "description": "Each trial must define a data collection plan",
+        "cardinality": "1",
+        "level": "3",
+        "meaning": "Element"
+      }
+    },
+    {
+      "_id": "elem-AAf1NQTO",
+      "attributes": {
+        "label": "Summary",
+        "level": "2",
+        "meaning": "Element",
+        "cardinality": "1"
+      }
+    },
+    {
+      "_id": "elem-ASvFWVsV",
+      "attributes": {
+        "label": "Metrics",
+        "description": "Each trial must define how the data will be interpreted and what needs to be achieved to resolve Research Questions and Objectives.",
+        "cardinality": "1..*",
+        "level": "3",
+        "meaning": "Element"
+      }
+    },
+    {
+      "_id": "elem-BXp4vhcI",
+      "attributes": {
+        "label": "Provenance",
+        "level": "3",
+        "tags": [],
+        "description": "Where does this Gap originate from (Name + URL of the original Gap description)",
+        "meaning": "Concept",
+        "cardinality": "1"
+      }
+    },
+    {
+      "_id": "elem-ByaTjCfC",
+      "attributes": {
+        "label": "Title",
+        "level": "2",
+        "meaning": "Element",
+        "cardinality": "1"
+      }
+    },
+    {
+      "_id": "elem-Cd4cn40V",
+      "attributes": {
+        "label": "Innovation Stage",
+        "description": "Innovation stage is a concept similar to \"Technological Readiness Level\", but less technology oriented.",
+        "level": "1",
+        "cardinality": "1",
+        "meaning": "Taxonomy"
+      }
+    },
+    {
+      "_id": "elem-CmskIlAj",
+      "attributes": {
+        "label": "Scenario",
+        "description": "Each Trial must define a Trial scenario",
+        "cardinality": "1",
+        "level": "2",
+        "meaning": "Element"
+      }
+    },
+    {
+      "_id": "elem-EysPVF8E",
+      "attributes": {
+        "label": "Crisis Phase",
+        "level": "2",
+        "cardinality": "1..*",
+        "meaning": "Taxonomy"
+      }
+    },
+    {
+      "_id": "elem-Misbd1mi",
+      "attributes": {
+        "label": "Use Case",
+        "level": "2",
+        "meaning": "Element",
+        "cardinality": "1..*"
+      }
+    },
+    {
+      "_id": "elem-NgGc8u0r",
+      "attributes": {
+        "label": "Illustration",
+        "cardinality": "1..*",
+        "level": "2",
+        "meaning": "Element"
+      }
+    },
+    {
+      "_id": "elem-OJOUw06V",
+      "attributes": {
+        "label": "Gap",
+        "level": "1",
+        "description": "[Capability gap](#pos-data-model/gap) is a difference between a current capability and the capability necessary for an adequate performance of some task(s).",
+        "tags": [],
+        "meaning": "Concept"
+      }
+    },
+    {
+      "_id": "elem-QXF47AW1",
+      "attributes": {
+        "label": "Solution",
+        "description": "A solution is a means that contributes to a crisis management function. A solution is either one or more processes or one or more tools with related procedures.",
+        "level": "1",
+        "tags": [],
+        "meaning": "Concept"
+      }
+    },
+    {
+      "_id": "elem-So9yN9M7",
+      "attributes": {
+        "label": "Objective",
+        "meaning": "Element",
+        "level": "2",
+        "cardinality": "1..*",
+        "description": "Each Trial must have one or more Objectives"
+      }
+    },
+    {
+      "_id": "elem-VJ2MZWoq",
+      "attributes": {
+        "label": "Trial",
+        "level": "1",
+        "description": "Trial is a structured activity that's used to asess the innovative potential of one or more   [Solutions](#pos-data-model/solution) in resolving the [Gaps](#pos-data-model/gap)",
+        "tags": [],
+        "meaning": "Concept"
+      }
+    },
+    {
+      "_id": "elem-XxPQ2hiu",
+      "attributes": {
+        "label": "Rationale",
+        "level": "2",
+        "meaning": "Element",
+        "cardinality": "1"
+      }
+    },
+    {
+      "_id": "elem-XzLnU8FA",
+      "attributes": {
+        "label": "Crisis Size",
+        "level": "2",
+        "description": "Size of the crisis addressed by Solution",
+        "cardinality": "1..*",
+        "meaning": "Taxonomy"
+      }
+    },
+    {
+      "_id": "elem-btqhNEtn",
+      "attributes": {
+        "label": "Research Questions",
+        "description": "Trials should answer research questions.  Each Research Question is related to (at least?) one Objective",
+        "cardinality": "1..*",
+        "level": "3",
+        "meaning": "Element"
+      }
+    },
+    {
+      "_id": "elem-jN2VVsBn",
+      "attributes": {
+        "label": "Hazard",
+        "description": "Hazards Taxonomy",
+        "level": "1",
+        "cardinality": "1..*",
+        "meaning": "Taxonomy"
+      }
+    },
+    {
+      "_id": "elem-nRklu5cR",
+      "attributes": {
+        "label": "Lessons learnt",
+        "description": "Final result of a trial",
+        "cardinality": "1..*",
+        "level": "2",
+        "meaning": "Concept"
+      }
+    },
+    {
+      "_id": "elem-q0yY8J6v",
+      "attributes": {
+        "label": "Documentation",
+        "level": "2",
+        "cardinality": "0..*",
+        "meaning": "Element"
+      }
+    },
+    {
+      "_id": "elem-xlxzLEgY",
+      "attributes": {
+        "label": "CM Function",
+        "tags": [],
+        "level": "1",
+        "cardinality": "1..*",
+        "meaning": "Taxonomy"
+      }
+    },
+    {
+      "_id": "elem-xmPWCdm4",
+      "attributes": {
+        "label": "Organisation",
+        "description": "[Organisation](#pos-data-model/organization) can be a Project, a Company, an association, etc. Organization can also be a part of another Organization.",
+        "level": "2",
+        "meaning": "Concept",
+        "cardinality": "1..*"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-23QZP7Ld",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "cardinality": "1:1..*",
+        "level": "0",
+        "description": "Each [Use Case](#pos-data-model/use-case) references one or more"
+      },
+      "from": "elem-Misbd1mi",
+      "to": "elem-xlxzLEgY"
+    },
+    {
+      "_id": "conn-6hSSWTeS",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-OJOUw06V",
+      "to": "elem-AAf1NQTO"
+    },
+    {
+      "_id": "conn-8h06ddvM",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-btqhNEtn"
+    },
+    {
+      "_id": "conn-9ttHo8Di",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "[Solutions](#pos-data-model/solution) are validated in [Trials](#pos-data-model/trial)",
+        "level": "0"
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-VJ2MZWoq"
+    },
+    {
+      "_id": "conn-DNnlHAVg",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Main Link"
+        ],
+        "level": "0",
+        "description": "[Gaps](#pos-data-model/gap) are resolved by [Solutions](#pos-data-model/solution)",
+        "connection type": "m:n"
+      },
+      "from": "elem-OJOUw06V",
+      "to": "elem-QXF47AW1"
+    },
+    {
+      "_id": "conn-GIsoJabk",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-nRklu5cR"
+    },
+    {
+      "_id": "conn-GcUJBbTG",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Indicates if the solution is meant to be used at local, regional, national or international level. \nOperative/tactical/strategic may be better."
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-XzLnU8FA"
+    },
+    {
+      "_id": "conn-HV5VVKp1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "cardinality": "1:1..*",
+        "tags": [
+          "Reference"
+        ],
+        "level": "0",
+        "description": "Each rationale must reference at least one CM function"
+      },
+      "from": "elem-XxPQ2hiu",
+      "to": "elem-xlxzLEgY"
+    },
+    {
+      "_id": "conn-HrikLlMc",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-AAf1NQTO"
+    },
+    {
+      "_id": "conn-K9Umwnzm",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Each Solution is \"owned\" by one or more Organisations",
+        "level": "1"
+      },
+      "from": "elem-xmPWCdm4",
+      "to": "elem-QXF47AW1"
+    },
+    {
+      "_id": "conn-NyehZJAI",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "[Trials](#pos-data-model/trial) are structured activities that rest the capabilities of  [Solutions](#pos-data-model/solution) to resolve [Gaps](#pos-data-model/gap)",
+        "level": "0"
+      },
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-OJOUw06V"
+    },
+    {
+      "_id": "conn-Q3Z3pK2R",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Indicates the innovation stage of Solution (similar to TRL)"
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-Cd4cn40V"
+    },
+    {
+      "_id": "conn-QkxjnB2W",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-OJOUw06V",
+      "to": "elem-ByaTjCfC"
+    },
+    {
+      "_id": "conn-R9579LsL",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-QXF47AW1",
+      "to": "elem-AAf1NQTO"
+    },
+    {
+      "_id": "conn-SkwItc7i",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Defining the objectives is a good way to start defining a Trial."
+      },
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-So9yN9M7"
+    },
+    {
+      "_id": "conn-U47mHeCg",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": ""
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-NgGc8u0r"
+    },
+    {
+      "_id": "conn-UWZdg84J",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Solutions can provide documentation, e.g. \"user manual\", \"administrator manual\" etc."
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-q0yY8J6v"
+    },
+    {
+      "_id": "conn-UvHnPHNe",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-OJOUw06V",
+      "to": "elem-3RrQvrMu"
+    },
+    {
+      "_id": "conn-WXlsULwI",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "cardinality": "1:1..*",
+        "level": "0",
+        "description": "Rationale is to Gaps what \"use case\" is to Solutions."
+      },
+      "from": "elem-OJOUw06V",
+      "to": "elem-XxPQ2hiu"
+    },
+    {
+      "_id": "conn-YPTgpqLp",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Solutions can be following 0 or more standards",
+        "cardinality": "1:0..*"
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-14xOZ1hK"
+    },
+    {
+      "_id": "conn-YZ2jaChh",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-ASvFWVsV"
+    },
+    {
+      "_id": "conn-ZOaZeNxN",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Trial can not be executed without a scenario"
+      },
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-CmskIlAj"
+    },
+    {
+      "_id": "conn-a4RoCjAt",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "[Gaps](#pos-data-model/gap) are resolved through [Trials](#pos-data-model/trial).",
+        "level": "0"
+      },
+      "from": "elem-OJOUw06V",
+      "to": "elem-VJ2MZWoq"
+    },
+    {
+      "_id": "conn-juUcRRkT",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-QXF47AW1",
+      "to": "elem-ByaTjCfC"
+    },
+    {
+      "_id": "conn-me9gQJEC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "[Solutions](#pos-data-model/solution) resolve [Gaps](#pos-data-model/gap)",
+        "level": "0",
+        "tags": [
+          "Main Link"
+        ]
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-OJOUw06V"
+    },
+    {
+      "_id": "conn-n9qtSNde",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Solution description contains one or more [Use Cases](#pos-data-model/use-case)."
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-Misbd1mi"
+    },
+    {
+      "_id": "conn-p1suXdUZ",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Gaps often originate from somewhere else (e.g. the Gap is already described in some document or on some web site)"
+      },
+      "from": "elem-OJOUw06V",
+      "to": "elem-BXp4vhcI"
+    },
+    {
+      "_id": "conn-qUoGB7dg",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-ByaTjCfC"
+    },
+    {
+      "_id": "conn-qvDNciw7",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "[Trials](#pos-data-model/trial)  are asess innovative potential of [Solutions](#pos-data-model/solution).",
+        "level": "0"
+      },
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-QXF47AW1"
+    },
+    {
+      "_id": "conn-u6Zs0HHC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-VJ2MZWoq",
+      "to": "elem-8NPAFlU3"
+    },
+    {
+      "_id": "conn-u8kt6CBV",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "cardinality": "1:0..*",
+        "description": "[Gap](#pos-data-model/gap) can be generic or [Hazard-specific](#pos-data-model/hazard)."
+      },
+      "from": "elem-OJOUw06V",
+      "to": "elem-jN2VVsBn"
+    },
+    {
+      "_id": "conn-ugiKPpzh",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Solutions can be hazard specific or hazard agnostic"
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-jN2VVsBn"
+    },
+    {
+      "_id": "conn-xHNPXFNU",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Indicates the crisis phase the solution addresses. \nOften stakeholders can only  differentiate only between \"acute crisis situation\", and \"planning\""
+      },
+      "from": "elem-QXF47AW1",
+      "to": "elem-EysPVF8E"
+    },
+    {
+      "_id": "conn-y3CjWtw3",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "[Organisations](#pos-data-model/organisation) endorse  [Gaps](#pos-data-model/gap). Each Gap must (should?) be endorsed by at least one Organization",
+        "cardinality": "m:n"
+      },
+      "from": "elem-xmPWCdm4",
+      "to": "elem-OJOUw06V"
+    }
+  ],
+  "loops": [
+    {
+      "_id": "loop-Zh1Eg7JH",
+      "attributes": {
+        "label": "Trial - Gap relationship"
+      },
+      "connections": [
+        "conn-a4RoCjAt",
+        "conn-NyehZJAI"
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "_id": "map-2Ss175KC",
+      "name": "PoS data model",
+      "description": "The Portfolio of Solutions ([PoS](https://pos.driver-project.eu/) aims to provide a shared place where practitioners (e.g. CM professionals) can discover **innovative CM solutions** and solution providers can advertise their solutions in a way that makes them easy to find.\n\nFurthermore, the PoS also provides the \"Gaps Explorer\", where the **strategic CM gaps** are advertised and automatically linked with solutions that might be addressing these gaps.\n\nThe PoS supports the following functions:\n\n* Concise and well structured description of solutions.\n* Sophisticated search functionality.\n* Linking of Solutions with **Crisis Management functions** and other relevant taxonomies for easier discovery.\n* Advertising the relevant Solutions to trial owners.\n* Automated Linking of Gaps to solutions and Solutions to similar solutions as a complement to search.",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-rcFYdJFI",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-2FQuHQ8m",
+          "position": {
+            "x": 171.29706258088424,
+            "y": 42.66469372260119
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-q0yY8J6v"
+        },
+        {
+          "_id": "node-5B1y8R0n",
+          "position": {
+            "x": 93.91293489825792,
+            "y": -429.54599086922735
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-NgGc8u0r"
+        },
+        {
+          "_id": "node-5KKGZseg",
+          "position": {
+            "x": -603.5408012865425,
+            "y": -331.544938239627
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-XxPQ2hiu"
+        },
+        {
+          "_id": "node-Bm3dPQCI",
+          "position": {
+            "x": -479.12752195946223,
+            "y": 464.71132212900295
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ASvFWVsV"
+        },
+        {
+          "_id": "node-CfjsCDB6",
+          "position": {
+            "x": -171.7030148569534,
+            "y": -331.1117636173021
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-Misbd1mi"
+        },
+        {
+          "_id": "node-E9exPFCV",
+          "position": {
+            "x": -313.8285129019936,
+            "y": 48.697553920540194
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-AAf1NQTO"
+        },
+        {
+          "_id": "node-IH3fSzjn",
+          "position": {
+            "x": -578.5230068452342,
+            "y": 272.7818158016236
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-So9yN9M7"
+        },
+        {
+          "_id": "node-LWAFCgBR",
+          "position": {
+            "x": -514.8915509933325,
+            "y": 39.47036914119336
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ByaTjCfC"
+        },
+        {
+          "_id": "node-O9o3OCqv",
+          "position": {
+            "x": -232.4519733070249,
+            "y": 313.67791711674056
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-CmskIlAj"
+        },
+        {
+          "_id": "node-OO1ckgdg",
+          "position": {
+            "x": 58.20865212597542,
+            "y": 82.74970333560658
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-14xOZ1hK"
+        },
+        {
+          "_id": "node-Osh7oydI",
+          "position": {
+            "x": -373.8035434175394,
+            "y": -559.1321575352395
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-xmPWCdm4"
+        },
+        {
+          "_id": "node-TZaq8BI2",
+          "position": {
+            "x": -394.14998035921093,
+            "y": 196.43707847120083
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-VJ2MZWoq"
+        },
+        {
+          "_id": "node-Thtfpxrb",
+          "position": {
+            "x": 185.72556614836873,
+            "y": -319.0647181660993
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-Cd4cn40V"
+        },
+        {
+          "_id": "node-UQ19bL3I",
+          "position": {
+            "x": -685.5995308528464,
+            "y": -579.5059936308572
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-BXp4vhcI"
+        },
+        {
+          "_id": "node-dsjS8igg",
+          "position": {
+            "x": -339.8403229459473,
+            "y": 454.4627640431468
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-8NPAFlU3"
+        },
+        {
+          "_id": "node-goodAguN",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-jN2VVsBn"
+        },
+        {
+          "_id": "node-k31qpIP3",
+          "position": {
+            "x": 202.5521382684465,
+            "y": -92.13262785313285
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-EysPVF8E"
+        },
+        {
+          "_id": "node-o0gJCFVc",
+          "position": {
+            "x": 20.02888692836363,
+            "y": -197.47047782655872
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-QXF47AW1"
+        },
+        {
+          "_id": "node-qhuMVD2r",
+          "position": {
+            "x": -395.5927087190185,
+            "y": -389.44343755701374
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-xlxzLEgY"
+        },
+        {
+          "_id": "node-skL3aqeQ",
+          "position": {
+            "x": -628.9287851568195,
+            "y": 426.7849701174442
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-btqhNEtn"
+        },
+        {
+          "_id": "node-uRLslGRi",
+          "position": {
+            "x": -76.75925585707505,
+            "y": 255.6968790661284
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-nRklu5cR"
+        },
+        {
+          "_id": "node-wKQcPBLN",
+          "position": {
+            "x": 257.3198571306376,
+            "y": -201.55540286534782
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-XzLnU8FA"
+        },
+        {
+          "_id": "node-xzY8ip8U",
+          "position": {
+            "x": -801.0509247991544,
+            "y": -147.74780856171637
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-OJOUw06V"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-0o7SCsDn",
+          "style": {},
+          "connection": "conn-6hSSWTeS"
+        },
+        {
+          "_id": "edge-3BqceJNI",
+          "style": {},
+          "connection": "conn-R9579LsL"
+        },
+        {
+          "_id": "edge-4J7zfiVq",
+          "style": {},
+          "connection": "conn-SkwItc7i"
+        },
+        {
+          "_id": "edge-4P7RZvUq",
+          "style": {},
+          "connection": "conn-9ttHo8Di"
+        },
+        {
+          "_id": "edge-A7LbGgpR",
+          "style": {},
+          "connection": "conn-8h06ddvM"
+        },
+        {
+          "_id": "edge-Gr5cgHzw",
+          "style": {},
+          "connection": "conn-YZ2jaChh"
+        },
+        {
+          "_id": "edge-HB598RHb",
+          "curvature": -0.41231592393330774,
+          "style": {},
+          "connection": "conn-a4RoCjAt"
+        },
+        {
+          "_id": "edge-KVutvrE0",
+          "style": {},
+          "connection": "conn-ZOaZeNxN"
+        },
+        {
+          "_id": "edge-KexwPB4x",
+          "curvature": -0.18711891093424293,
+          "style": {},
+          "connection": "conn-23QZP7Ld"
+        },
+        {
+          "_id": "edge-NKBX5Oev",
+          "style": {},
+          "connection": "conn-UWZdg84J"
+        },
+        {
+          "_id": "edge-TKoNj6Mo",
+          "style": {},
+          "connection": "conn-YPTgpqLp"
+        },
+        {
+          "_id": "edge-VlPCHQNY",
+          "curvature": -0.11492415228642812,
+          "style": {},
+          "connection": "conn-n9qtSNde"
+        },
+        {
+          "_id": "edge-WyJlOQYs",
+          "style": {},
+          "connection": "conn-u8kt6CBV"
+        },
+        {
+          "_id": "edge-a5bKBQdE",
+          "style": {},
+          "connection": "conn-u6Zs0HHC"
+        },
+        {
+          "_id": "edge-bHVd3Twu",
+          "style": {},
+          "connection": "conn-GIsoJabk"
+        },
+        {
+          "_id": "edge-bNIKxeYS",
+          "curvature": -0.13276690093962268,
+          "style": {},
+          "connection": "conn-juUcRRkT"
+        },
+        {
+          "_id": "edge-eBdATL2x",
+          "curvature": 0.24329209148404246,
+          "style": {},
+          "connection": "conn-HV5VVKp1"
+        },
+        {
+          "_id": "edge-hhLHihtj",
+          "curvature": -0.3422312143358606,
+          "style": {},
+          "connection": "conn-qvDNciw7"
+        },
+        {
+          "_id": "edge-lCDbU7PU",
+          "style": {},
+          "connection": "conn-qUoGB7dg"
+        },
+        {
+          "_id": "edge-lr4exHZN",
+          "curvature": 0.3457423952109752,
+          "style": {},
+          "connection": "conn-K9Umwnzm"
+        },
+        {
+          "_id": "edge-mYt4WkCh",
+          "style": {},
+          "connection": "conn-p1suXdUZ"
+        },
+        {
+          "_id": "edge-pCXHW6kt",
+          "style": {},
+          "connection": "conn-WXlsULwI"
+        },
+        {
+          "_id": "edge-pD2aK5n5",
+          "style": {},
+          "connection": "conn-HrikLlMc"
+        },
+        {
+          "_id": "edge-qmOkxJMB",
+          "curvature": -0.06829610229199719,
+          "style": {},
+          "connection": "conn-ugiKPpzh"
+        },
+        {
+          "_id": "edge-rY6UDOp9",
+          "style": {},
+          "connection": "conn-Q3Z3pK2R"
+        },
+        {
+          "_id": "edge-uBPq4GpG",
+          "style": {},
+          "connection": "conn-U47mHeCg"
+        },
+        {
+          "_id": "edge-uG0QQtmg",
+          "style": {},
+          "connection": "conn-QkxjnB2W"
+        },
+        {
+          "_id": "edge-uw69cLFc",
+          "style": {},
+          "connection": "conn-xHNPXFNU"
+        },
+        {
+          "_id": "edge-vKd7ObGG",
+          "style": {},
+          "connection": "conn-GcUJBbTG"
+        },
+        {
+          "_id": "edge-xqklREQN",
+          "style": {},
+          "connection": "conn-NyehZJAI"
+        },
+        {
+          "_id": "edge-yoAT9Bcr",
+          "curvature": -0.3523838232270809,
+          "style": {},
+          "connection": "conn-y3CjWtw3"
+        }
+      ],
+      "loops": []
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-rcFYdJFI",
+      "name": "PoS data model",
+      "style": "@controls {\n  bottom {\n    filter {\n      target: element;\n      by: \"meaning\";\n      as: buttons;\n      multiple: true;\n      default: show-all;\n    }\n  }\n\n  top-right {\n    showcase {\n      target: element;\n      by: \"meaning\";\n      as: buttons;\n      multiple: true;\n      default: show-all;\n      mode: normal;\n    }\n  }\n}\n\n@settings {\n  template: systems;\n  element-color: categorize(\"Level\", neon2);\n  element-shape: categorize(\"Meaning\");\n  element-scale: scale(\"Level\", 1.25, 0.8);\n}\n\n/* elements:  */\n[\"Meaning\"=\"Concept\"] {\n  shape: triangle;\n}\n\n/* elements:  */\n[\"Meaning\"=\"Taxonomy\"] {\n  shape: rectangle;\n}\n\n"
+    }
+  ]
+}
