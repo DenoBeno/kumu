@@ -260,7 +260,7 @@
         "cardinality": "1..*",
         "level": "2",
         "meaning": "Element",
-        "description": "A drawing, a photograph, a diagram, etc. visually representing the object."
+        "description": "A drawing, a photograph, a diagram, etc. visually representing the object. NEW TEXT"
       }
     },
     {
