@@ -208,8 +208,8 @@
       "_id": "elem-ByaTjCfC",
       "attributes": {
         "label": "Title",
-		"description": "Object name. Short, informative and, ideally also unique.",
         "level": "2",
+		"description": "Object name. Short, informative and, ideally also unique.",
         "meaning": "Element",
         "cardinality": "1"
       }
