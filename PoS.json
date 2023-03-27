@@ -259,7 +259,8 @@
         "label": "Illustration",
         "cardinality": "1..*",
         "level": "2",
-        "meaning": "Element"
+        "meaning": "Element",
+        "description": "A drawing, a photograph, a diagram, etc. visually representing the object."
       }
     },
     {
